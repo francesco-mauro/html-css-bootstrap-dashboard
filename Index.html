@@ -5,401 +5,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="">
+
+    <!-- FONTAWSOME  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- FONTAWSOME  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+
+    <!-- BOOTSRAP ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- BOOTSRAP ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+
+    <!-- CUSTOM STYLES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
 </head>
 
 <body>
 
-    <!-- HEADER ++++++++++++++++++++++++++++++ -->
-    <nav class="navbar navbar-dark bg-dark d-md-none w-100" aria-label="First navbar example">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Never expand</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01"
-                aria-controls="navbarsExample01" aria-expanded="true" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <!-- HEADER +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <header class="d-md-none">
+        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Bootstrap Dashboard</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <div class="navbar-collapse collapse show" id="navbarsExample01" style="">
-                <ul class="navbar-nav me-auto mb-2">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                            aria-expanded="false">Dropdown</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <form role="search">
-                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                </form>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
+    <!-- HEADER +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
+    <!-- MAIN CONTAINER +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- SIDEBAR +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="col-12 col-md-3 col-lg-3 collapse d-md-block bg-dark text-white sidebar" id="navbarNav">
+                <a href="/"
+                    class="d-none d-md-flex d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none pt-3">
 
-    <main class="d-flex flex-nowrap">
-
-
-
-        <!-- SIDEBAR ++++++++++++++++++++++++++++++ -->
-        <div class="d-md-flex flex-column flex-shrink-0 p-3 text-bg-dark d-none min-vh-100" style="width: 280px;">
-            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-                <svg class="bi pe-none me-2" width="40" height="32">
-                    <use xlink:href="#bootstrap"></use>
-                </svg>
-                <span class="fs-4">Sidebar</span>
-            </a>
-            <hr>
-            <ul class="nav nav-pills flex-column mb-auto">
-                <li class="nav-item">
-                    <a href="#" class="nav-link active" aria-current="page">
-                        <svg class="bi pe-none me-2" width="16" height="16">
-                            <use xlink:href="#home"></use>
-                        </svg>
-                        Home
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link text-white">
-                        <svg class="bi pe-none me-2" width="16" height="16">
-                            <use xlink:href="#speedometer2"></use>
-                        </svg>
-                        Dashboard
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link text-white">
-                        <svg class="bi pe-none me-2" width="16" height="16">
-                            <use xlink:href="#table"></use>
-                        </svg>
-                        Orders
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link text-white">
-                        <svg class="bi pe-none me-2" width="16" height="16">
-                            <use xlink:href="#grid"></use>
-                        </svg>
-                        Products
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link text-white">
-                        <svg class="bi pe-none me-2" width="16" height="16">
-                            <use xlink:href="#people-circle"></use>
-                        </svg>
-                        Customers
-                    </a>
-                </li>
-            </ul>
-            <hr>
-            <div class="dropdown">
-                <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
-                    <strong>mdo</strong>
+                    <span class="fs-5">Bootstrap Dashboard</span>
                 </a>
-                <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
-                    <li><a class="dropdown-item" href="#">New project...</a></li>
-                    <li><a class="dropdown-item" href="#">Settings</a></li>
-                    <li><a class="dropdown-item" href="#">Profile</a></li>
-                    <li>
-                        <hr class="dropdown-divider">
+                <hr>
+                <ul class="nav nav-pills flex-column mb-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-white" aria-current="page">
+                            <i class="fa-solid fa-house"></i>
+                            Dashboard
+                        </a>
                     </li>
-                    <li><a class="dropdown-item" href="#">Sign out</a></li>
+                    <li>
+                        <a href="index.html" class="nav-link text-white active">
+                            <i class="fa-solid fa-chart-line"></i>
+                            Sponsorizzazione
+                        </a>
+                    </li>
+                    <li>
+                        <a href="prodoucts.html" class="nav-link text-white">
+                            <i class="fa-solid fa-box"></i>
+                            Prodotti
+                        </a>
+                    </li>
+                    <li>
+                        <a href="add_product.html" class="nav-link text-white">
+                            <i class="fa-solid fa-box"></i>
+                            Nuovo prodotto
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="nav-link text-white">
+                            <i class="fa-solid fa-user"></i>
+                            Clienti
+                        </a>
+                    </li>
                 </ul>
+                <hr>
+                <div class="dropdown">
+                    <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                        <strong>mdo</strong>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+                        <li><a class="dropdown-item" href="#">New project...</a></li>
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Sign out</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- SIDEBAR +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+            <div class="col-12 col-md-9 col-lg-9 min-vh-100 overflow-auto">Sponsorizzazione
             </div>
         </div>
 
-
-        <!-- SIDEBAR ++++++++++++++++++++++++++++++ -->
-
-        <!-- TABLE ++++++++++++++++++ -->
-
-        <main class="col-md-8 col-lg-9 p-3">
-            <div class="container-fluid ">
-                <div class="row p-2">
-                    <div class="col">
-                        <h2>10 prodotti trovati</h2>
-                    </div>
-                    <!-- BUTTONS -->
-                    <div class="col text-end">
-                        <div class="btn-group">
-                            <a href="#" class="btn btn-outline-secondary">Esporta</a>
-                            <a href="new-product.html" class="btn btn-outline-secondary">Nuovo</a>
-                        </div>
-                    </div>
-                    <!-- BUTTONS -->
-
-                    <hr>
-                </div>
-
-                <!-- *TABLE -->
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th scope="col">Nome</th>
-                            <th scope="col"></th>
-                            <th scope="col" class="collapse d-md-table-cell">Prezzo</th>
-                            <th scope="col" class="collapse d-lg-table-cell">Stato</th>
-                            <th scope="col">Azioni</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row"><img src="https://picsum.photos/id/1/40/40" alt=""></th>
-                            <td>
-                                Smartphone Samsung Galaxy S21
-                                <p class="text-secondary collapse d-xxl-block">Display AMOLED, Fotocamera Ultra Wide
-                                    Batteria a lunga durata</p>
-                            </td>
-                            <td class="collapse d-md-table-cell text-nowrap">799.00 €</td>
-                            <td class="text-success collapse d-lg-table-cell">
-                                <span>Prova</span>
-                            </td>
-                            <td>
-                                <button type="button" class="btn btn-outline-primary">prova</button>
-                                <button type="button" class="btn btn-outline-danger">prova</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row"><img src="https://picsum.photos/id/1/40/40" alt=""></th>
-                            <td>
-                                Smartphone Samsung Galaxy S21
-                                <p class="text-secondary collapse d-xxl-block">Display AMOLED, Fotocamera Ultra Wide
-                                    Batteria a lunga durata</p>
-                            </td>
-                            <td class="collapse d-md-table-cell text-nowrap">799.00 €</td>
-                            <td class="text-success collapse d-lg-table-cell">
-                                <span>Prova</span>
-                            </td>
-                            <td>
-                                <button type="button" class="btn btn-outline-primary">prova</button>
-                                <button type="button" class="btn btn-outline-danger">prova</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row"><img src="https://picsum.photos/id/1/40/40" alt=""></th>
-                            <td>
-                                Smartphone Samsung Galaxy S21
-                                <p class="text-secondary collapse d-xxl-block">Display AMOLED, Fotocamera Ultra Wide
-                                    Batteria a lunga durata</p>
-                            </td>
-                            <td class="collapse d-md-table-cell text-nowrap">799.00 €</td>
-                            <td class="text-success collapse d-lg-table-cell">
-                                <span>Prova</span>
-                            </td>
-                            <td>
-                                <button type="button" class="btn btn-outline-primary">prova</button>
-                                <button type="button" class="btn btn-outline-danger">prova</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row"><img src="https://picsum.photos/id/1/40/40" alt=""></th>
-                            <td>
-                                Smartphone Samsung Galaxy S21
-                                <p class="text-secondary collapse d-xxl-block">Display AMOLED, Fotocamera Ultra Wide
-                                    Batteria a lunga durata</p>
-                            </td>
-                            <td class="collapse d-md-table-cell text-nowrap">799.00 €</td>
-                            <td class="text-success collapse d-lg-table-cell">
-                                <span>Prova</span>
-                            </td>
-                            <td>
-                                <button type="button" class="btn btn-outline-primary">prova</button>
-                                <button type="button" class="btn btn-outline-danger">prova</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row"><img src="https://picsum.photos/id/1/40/40" alt=""></th>
-                            <td>
-                                Smartphone Samsung Galaxy S21
-                                <p class="text-secondary collapse d-xxl-block">Display AMOLED, Fotocamera Ultra Wide
-                                    Batteria a lunga durata</p>
-                            </td>
-                            <td class="collapse d-md-table-cell text-nowrap">799.00 €</td>
-                            <td class="text-success collapse d-lg-table-cell">
-                                <span>Prova</span>
-                            </td>
-                            <td>
-                                <button type="button" class="btn btn-outline-primary">prova</button>
-                                <button type="button" class="btn btn-outline-danger">prova</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row"><img src="https://picsum.photos/id/1/40/40" alt=""></th>
-                            <td>
-                                Smartphone Samsung Galaxy S21
-                                <p class="text-secondary collapse d-xxl-block">Display AMOLED, Fotocamera Ultra Wide
-                                    Batteria a lunga durata</p>
-                            </td>
-                            <td class="collapse d-md-table-cell text-nowrap">799.00 €</td>
-                            <td class="text-success collapse d-lg-table-cell">
-                                <span>Prova</span>
-                            </td>
-                            <td>
-                                <button type="button" class="btn btn-outline-primary">prova</button>
-                                <button type="button" class="btn btn-outline-danger">prova</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row"><img src="https://picsum.photos/id/1/40/40" alt=""></th>
-                            <td>
-                                Smartphone Samsung Galaxy S21
-                                <p class="text-secondary collapse d-xxl-block">Display AMOLED, Fotocamera Ultra Wide
-                                    Batteria a lunga durata</p>
-                            </td>
-                            <td class="collapse d-md-table-cell text-nowrap">799.00 €</td>
-                            <td class="text-danger collapse d-lg-table-cell">
-                                <span>Prova</span>
-                            </td>
-                            <td>
-                                <button type="button" class="btn btn-outline-primary">prova</button>
-                                <button type="button" class="btn btn-outline-danger">prova</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row"><img src="https://picsum.photos/id/1/40/40" alt=""></th>
-                            <td>
-                                Smartphone Samsung Galaxy S21
-                                <p class="text-secondary collapse d-xxl-block">Display AMOLED, Fotocamera Ultra Wide
-                                    Batteria a lunga durata</p>
-                            </td>
-                            <td class="collapse d-md-table-cell text-nowrap">799.00 €</td>
-                            <td class="text-danger collapse d-lg-table-cell">
-                                <span>Prova</span>
-                            </td>
-                            <td>
-                                <button type="button" class="btn btn-outline-primary">prova</button>
-                                <button type="button" class="btn btn-outline-danger">prova</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row"><img src="https://picsum.photos/id/1/40/40" alt=""></th>
-                            <td>
-                                Smartphone Samsung Galaxy S21
-                                <p class="text-secondary collapse d-xxl-block">Display AMOLED, Fotocamera Ultra Wide
-                                    Batteria a lunga durata</p>
-                            </td>
-                            <td class="collapse d-md-table-cell text-nowrap">799.00 €</td>
-                            <td class="text-success collapse d-lg-table-cell">
-                                <span>Prova</span>
-                            </td>
-                            <td>
-                                <button type="button" class="btn btn-outline-primary">prova</button>
-                                <button type="button" class="btn btn-outline-danger">prova</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row"><img src="https://picsum.photos/id/1/40/40" alt=""></th>
-                            <td>
-                                Smartphone Samsung Galaxy S21
-                                <p class="text-secondary collapse d-xxl-block">Display AMOLED, Fotocamera Ultra Wide
-                                    Batteria a lunga durata</p>
-                            </td>
-                            <td class="collapse d-md-table-cell text-nowrap">799.00 €</td>
-                            <td class="text-success collapse d-lg-table-cell">
-                                <span>Prova</span>
-                            </td>
-                            <td>
-                                <button type="button" class="btn btn-outline-primary">prova</button>
-                                <button type="button" class="btn btn-outline-danger">prova</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row"><img src="https://picsum.photos/id/1/40/40" alt=""></th>
-                            <td>
-                                Smartphone Samsung Galaxy S21
-                                <p class="text-secondary collapse d-xxl-block">Display AMOLED, Fotocamera Ultra Wide
-                                    Batteria a lunga durata</p>
-                            </td>
-                            <td class="collapse d-md-table-cell text-nowrap">799.00 €</td>
-                            <td class="text-success collapse d-lg-table-cell">
-                                <span>Prova</span>
-                            </td>
-                            <td>
-                                <button type="button" class="btn btn-outline-primary">prova</button>
-                                <button type="button" class="btn btn-outline-danger">prova</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row"><img src="https://picsum.photos/id/1/40/40" alt=""></th>
-                            <td>
-                                Smartphone Samsung Galaxy S21
-                                <p class="text-secondary collapse d-xxl-block">Display AMOLED, Fotocamera Ultra Wide
-                                    Batteria a lunga durata</p>
-                            </td>
-                            <td class="collapse d-md-table-cell text-nowrap">799.00 €</td>
-                            <td class="text-danger collapse d-lg-table-cell">
-                                <span>Prova</span>
-                            </td>
-                            <td>
-                                <button type="button" class="btn btn-outline-primary">prova</button>
-                                <button type="button" class="btn btn-outline-danger">prova</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row"><img src="https://picsum.photos/id/1/40/40" alt=""></th>
-                            <td>
-                                Smartphone Samsung Galaxy S21
-                                <p class="text-secondary collapse d-xxl-block">Display AMOLED, Fotocamera Ultra Wide
-                                    Batteria a lunga durata</p>
-                            </td>
-                            <td class="collapse d-md-table-cell text-nowrap">799.00 €</td>
-                            <td class="text-danger collapse d-lg-table-cell">
-                                <span>Prova</span>
-                            </td>
-                            <td>
-                                <button type="button" class="btn btn-outline-primary">prova</button>
-                                <button type="button" class="btn btn-outline-danger">prova</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row"><img src="https://picsum.photos/id/1/40/40" alt=""></th>
-                            <td>
-                                Smartphone Samsung Galaxy S21
-                                <p class="text-secondary collapse d-xxl-block">Display AMOLED, Fotocamera Ultra Wide
-                                    Batteria a lunga durata</p>
-                            </td>
-                            <td class="collapse d-md-table-cell text-nowrap">799.00 €</td>
-                            <td class="text-success collapse d-lg-table-cell">
-                                <span>Prova</span>
-                            </td>
-                            <td>
-                                <button type="button" class="btn btn-outline-primary">prova</button>
-                                <button type="button" class="btn btn-outline-danger">prova</button>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </main>
-        <!-- /Main -->
+    </div>
+    <!-- MAIN CONTAINER +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
 
 
 
+    <!-- JAVASCRIPT +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- JAVASCRIPT +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
-
-
-        <!-- script javascrips -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-            crossorigin="anonymous"></script>
 
 </body>
 
